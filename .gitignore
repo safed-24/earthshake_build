@@ -1,34 +1,71 @@
+# ----------------------------
 # Python
+# ----------------------------
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# ----------------------------
+# Virtual Environments
+# ----------------------------
 venv/
 env/
-*.env
+ENV/
+.venv/
 
+# ----------------------------
 # PyCharm
+# ----------------------------
 .idea/
 *.iml
 
-# Logs
-logs/
-*.log
+# ----------------------------
+# OS Files
+# ----------------------------
+.DS_Store
+Thumbs.db
 
+# ----------------------------
 # Airflow
-airflow.cfg
-dags/*.pyc
+# ----------------------------
+airflow/logs/
+airflow/plugins/
+airflow/config/
+*.airflowignore
 
+# ----------------------------
 # Docker
+# ----------------------------
+docker-compose.override.yml
 *.pid
 *.sock
 *.pid.lock
-*.swp
-*.tmp
 
-# MinIO / data
+# ----------------------------
+# Minio
+# ----------------------------
 data/.minio.sys/
 
-# OS files
-.DS_Store
-Thumbs.db
+# ----------------------------
+# Metabase
+# ----------------------------
+.metabase.db
+.metabase-data/
+
+# ----------------------------
+# Environment variables
+# ----------------------------
+.env
+
+# ----------------------------
+# Temporary / Misc
+# ----------------------------
+*.tmp
+*.swp
