@@ -69,3 +69,7 @@ data/.minio.sys/
 # ----------------------------
 *.tmp
 *.swp
+
+data/
+logs/
+cred.py
